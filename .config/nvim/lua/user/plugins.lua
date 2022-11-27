@@ -45,11 +45,20 @@ packer.startup(function(use)
 		tag = 'nightly' -- update every week
 	}
 
-
+	-- telsecope
 	use {
 		'nvim-telescope/telescope.nvim',
 		requires = {{ 'nvim-lua/plenary.nvim'}},
 		tag = '0.1.0'
+	}
+
+	-- tree sitter
+	use {
+		'nvim-treesitter/nvim-treesitter',
+		run = function()
+			local ts_update = require('nvim_treesitter.install').update({with_sync = true})
+			ts_update()
+		end,
 	}
 	
 	if packer_botstrap then
