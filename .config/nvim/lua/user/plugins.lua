@@ -60,6 +60,8 @@ packer.startup(function(use)
 			ts_update()
 		end,
 	}
+
+	use{'jose-elias-alvarez/null-ls.nvim', requires = { 'nvim-lua/plenary.nvim'}}
 	
 	if packer_botstrap then
 		require('packer').sync()
