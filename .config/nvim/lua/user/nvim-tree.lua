@@ -5,4 +5,10 @@ end
 
 vim.g.loaded_netrw = 1
 vim.g.loaded_netrwPlugin = 1
-nvim_tree.setup {}
+vim.g.termguicolors = true
+nvim_tree.setup {
+	view = {
+		number = true,
+		relativenumber = true
+	}
+}
