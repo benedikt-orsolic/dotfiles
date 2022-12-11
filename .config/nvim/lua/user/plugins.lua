@@ -62,6 +62,7 @@ packer.startup(function(use)
 	}
 
 	use{'jose-elias-alvarez/null-ls.nvim', requires = { 'nvim-lua/plenary.nvim'}}
+	use{'lewis6991/gitsigns.nvim', tag = 'release' }
 	
 	if packer_botstrap then
 		require('packer').sync()
