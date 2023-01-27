@@ -10,6 +10,7 @@ end
 
 config.setup({
 	ensure_installed = {
+		'rust',
 		'javascript',
 		'typescript',
 		'tsx',
