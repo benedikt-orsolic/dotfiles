@@ -1,6 +1,6 @@
 --local status_ok, lsp_zero = pcall(require, 'lsp-zero')
 --if not status_ok then
-  --return
+--return
 --end
 
 local lsp = require('lsp-zero').preset({
@@ -34,3 +34,6 @@ vim.diagnostic.config({
 		prefix = '',
 	}
 })
+
+
+--lsp.rust_analyzer.setup({})

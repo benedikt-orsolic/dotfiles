@@ -17,12 +17,9 @@ config.setup({
 		'lua',
 		'gitcommit',
 	},
-
 	sync_install = false,
-
 	highlight = {
 		enable = true,
-
 		additional_vim_reqex_highlighting = false,
 	},
 })
