@@ -94,6 +94,13 @@ packer.startup(function(use)
 		end
 	}
 
+	-- Bufferline UI
+	use{
+		'akinsho/bufferline.nvim',
+		tag = 'v3.*',
+		requires = 'nvim-tree/nvim-web-devicons'
+	}
+
 	if packer_botstrap then
 		require('packer').sync()
 	end
