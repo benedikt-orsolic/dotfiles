@@ -11,8 +11,13 @@ map("", "<Space>", "<Nop>")
 map("n", "<C-d>", "<C-d>zz")
 map("n", "<C-u>", "<C-u>zz")
 
+-- Cycle windows
 map("n", "<C-h>", "<C-w>h")
 map("n", "<C-l>", "<C-w>l")
+
+-- Cycle buffers
+map("n", "<S-h>", ":bprev<CR>")
+map("n", "<S-l>", ":bnext<CR>")
 
 map("n", "<Leader>f", "<cmd>lua vim.lsp.buf.format({async = true})<cr>")
 
