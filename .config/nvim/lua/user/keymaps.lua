@@ -22,7 +22,8 @@ map("n", "<S-l>", ":bnext<CR>")
 map("n", "<Leader>f", "<cmd>lua vim.lsp.buf.format({async = true})<cr>")
 
 map("n", "<Leader>e", ":NvimTreeToggle<CR>")
-map("n", "<Leader>ff", ":Telescope find_files<CR>")
+map("n", "<Leader>ff", ":Telescope git_files<CR>")
+map("n", "<Leader>faf", ":Telescope find_files<CR>")
 
 -- Comment
 map('n', '<leader>/', '<cmd>lua  require("Comment.api").toggle.linewise.current()<CR>')
