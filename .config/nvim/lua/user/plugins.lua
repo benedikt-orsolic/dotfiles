@@ -89,13 +89,13 @@ packer.startup(function(use)
 	-- commenting
 	use {
 		'numToStr/Comment.nvim',
-		config = function() 
+		config = function()
 			require('Comment').setup()
 		end
 	}
 
 	-- Bufferline UI
-	use{
+	use {
 		'akinsho/bufferline.nvim',
 		tag = 'v3.*',
 		requires = 'nvim-tree/nvim-web-devicons'
