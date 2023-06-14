@@ -28,3 +28,7 @@ map("n", "<Leader>faf", ":Telescope find_files<CR>")
 -- Comment
 map('n', '<leader>/', '<cmd>lua  require("Comment.api").toggle.linewise.current()<CR>')
 map('x', '<leader>/', '<ESC><CMD>lua require("Comment.api").toggle.linewise(vim.fn.visualmode())<CR>')
+
+
+-- Neoformat
+map('n', '<leader>fb', ":Neoformat<CR>")
