@@ -101,6 +101,10 @@ packer.startup(function(use)
 		requires = 'nvim-tree/nvim-web-devicons'
 	}
 
+	use {
+		'sbdchd/neoformat',
+	}
+
 	if packer_botstrap then
 		require('packer').sync()
 	end
