@@ -6,3 +6,5 @@ vim.g.loaded_netrwPlugin = 1
 vim.g.termguicolors = true
 
 vim.o.wrap = false
+
+require('vscode').load('dark')
