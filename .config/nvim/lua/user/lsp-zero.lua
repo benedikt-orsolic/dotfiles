@@ -21,15 +21,16 @@ end)
 
 lsp.setup()
 
---lsp.ensure_installed({
---	'tsserver',
---	'eslint',
---	'sumneko_lua',
---	'rust_analyzer'
---})
+lsp.ensure_installed({
+	'tsserver',
+	'eslint',
+	'sumneko_lua',
+	'rust_analyzer',
+	'jdtls',
+})
 
 vim.diagnostic.config({
-	virtual_text = true,
+	virtual_text = false,
 	signs = true,
 	update_in_insert = false,
 	underline = true,

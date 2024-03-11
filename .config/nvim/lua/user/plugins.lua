@@ -47,7 +47,7 @@ packer.startup(function(use)
 	use({
 		"nvim-telescope/telescope.nvim",
 		requires = { { "nvim-lua/plenary.nvim" } },
-		tag = "0.1.0",
+		tag = "0.1.4",
 	})
 
 	-- tree sitter
@@ -82,7 +82,10 @@ packer.startup(function(use)
 		},
 	})
 
-	use({ "lewis6991/gitsigns.nvim", tag = "release" })
+	-- Java lsp
+	use 'mfussenegger/nvim-jdtls'
+
+	use({ "lewis6991/gitsigns.nvim", tag = "v0.7" })
 
 	-- commenting
 	use({
